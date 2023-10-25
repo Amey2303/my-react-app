@@ -1,25 +1,12 @@
-function Hello() {
-  function toggleGreet() {
-    var greetText = document.querySelector('#heading');
-    var greetLabel = document.querySelector('#btnLabel');
+import React from 'react'
+import Updatetext from './component/Updatetext';
 
-    if (greetText.textContent === "Hello World!") {
-      greetText.textContent = "Hello Amey! :)";
-      greetLabel.textContent = "Greet World";
-    } else {
-      greetText.textContent = "Hello World!";
-      greetLabel.textContent = "Greet User!";
-    }
-  }
-
+function App() {
   return (
     <div>
-      <h1 id="heading">Hello World!</h1>
-      <button id="btnLabel" onClick={toggleGreet}>
-        Greet User!
-      </button>
+      <Updatetext />
     </div>
-  );
+  )
 }
 
-export default Hello;
+export default  App;
