@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+ import React, { useState, useRef, useEffect } from 'react';
 
 function Modal() {
   const [isModalOpen, setIsModalOpen] = useState(false);
